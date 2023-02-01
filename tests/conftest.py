@@ -1,6 +1,6 @@
 import pytest
 from selenium import webdriver
-
+import settings
 
 @pytest.fixture(scope="session")
 def setup(request):
@@ -14,7 +14,7 @@ def setup(request):
     for item in session.items:
         cls = item.getparent(pytest.Class)
         setattr(cls.obj, "driver", driver)
-    driver.get("http://128.232.222.153:8080/")
+    driver.get(settings.zeppelin_url)
 
 
     yield driver
