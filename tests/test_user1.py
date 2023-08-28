@@ -55,7 +55,7 @@ class TestUser1():
         self.driver.find_element(By.ID, "noteImportUrl").click()
 
         wait.until(expected_conditions.visibility_of_element_located((By.ID, "noteImportUrl")))
-        self.driver.find_element(By.ID, "noteImportUrl").send_keys("https://raw.githubusercontent.com/wfau/aglais-notebooks/main/Public%20Examples/1.%20Start%20here_2GRTQZFUM.zpln")
+        self.driver.find_element(By.ID, "noteImportUrl").send_keys("https://raw.githubusercontent.com/wfau/aglais-notebooks/main/Public%20Examples/1.%20Start%20here.zpln")
         self.driver.find_element(By.ID, "noteImportName").click()
 
         wait.until(expected_conditions.visibility_of_element_located((By.ID, "noteImportName")))
@@ -115,7 +115,7 @@ class TestUser1():
         self.driver.find_element(By.ID, "noteImportUrl").click()
 
         wait.until(expected_conditions.visibility_of_element_located((By.ID, "noteImportUrl")))
-        self.driver.find_element(By.ID, "noteImportUrl").send_keys("https://raw.githubusercontent.com/wfau/aglais-notebooks/main/Public%20Examples/7.%20Good%20astrometric%20solutions%20via%20ML%20Random%20Forest%20classifier_2GQDKZ59J.zpln")
+        self.driver.find_element(By.ID, "noteImportUrl").send_keys("https://raw.githubusercontent.com/wfau/aglais-notebooks/main/Public%20Examples/7.%20Good%20astrometric%20solutions%20via%20ML%20Random%20Forest%20classifier.zpln")
         self.driver.find_element(By.ID, "noteImportName").click()
 
         wait.until(expected_conditions.visibility_of_element_located((By.ID, "noteImportName")))
