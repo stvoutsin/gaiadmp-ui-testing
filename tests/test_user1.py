@@ -155,6 +155,6 @@ class TestUser1():
         actions = ActionChains(self.driver)
         actions.move_to_element(element).perform()
 
-        time.sleep(550)
+        time.sleep(700)
         assert self.driver.find_element(By.CSS_SELECTOR, "#paragraph_1661761989954_2120199763_control > .ng-binding").text == "FINISHED"
 
